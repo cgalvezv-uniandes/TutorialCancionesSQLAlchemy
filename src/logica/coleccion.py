@@ -24,7 +24,7 @@ class Coleccion():
         if len(busqueda) == 0:
             album = session.query(Album).filter(Album.id == album_id).first()
             album.titulo = titulo
-            album.ano = anio
+            album.ano = ani
             album.descripcion = descripcion
             album.medio = medio
             session.commit()
